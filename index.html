@@ -9,56 +9,84 @@
 </head>
 <body>
    <div class="container">
-      <h1>Superhero Form</h1>
+      <h1>Super<span>hero</span> Register</h1>
       <form action="" class="form">
-         <div class="form_abot">
+
+         <div class="form_about">
             <h2 class="form_title">About the Superhero</h2>
-            <label for="" class="form_name">Real Name</label>
-            <input type="text" id="" name="" class="form_input">
-            <label for="" class="form_name">Superhero Name</label>
-            <input type="text" id="" name="" class="form_input">
-            <label for="" class="form_name">Age</label>
-            <input type="text" id="" name="" class="form_input">
-            <label for="" class="form_name">About</label>
-            <textarea name="" id="" cols="30" rows="10" class="form_input">Information about the superhero, ma 500 symbols </textarea>
-            <label for="" class="form_name">Photo:</label>
-            <input type="file" id="" name="" class="form_photo">
+
+            <div class="form_inputs">
+               <label for="real_name" class="form_name">Real Name</label>
+               <input type="text" id="real_name" name="real_name" class="form_input">
+
+               <label for="alias" class="form_name">Superhero Name</label>
+               <input type="text" id="alias" name="alias" class="form_input">
+
+               <label for="age" class="form_name">Age</label>
+               <input type="text" id="age" name="age" min="1" max="999" step="1" class="form_input">
+
+               <br><label for="about" class="form_name">About</label>
+               <textarea name="about" id="about" cols="60" rows="5" class="form_input">Information about the superhero, ma 500 symbols </textarea><br>
+
+               <label for="photo" class="form_name">Photo:</label>
+               <input type="file" id="photo" name="photo" class="form_photo">
+            </div>
          </div>
+
          <div class="form_powers">
             <h2 class="form_title">Powers</h2>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Telekinesis</label>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Super strenght or speed</label>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Shapeshifting</label>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Flight</label>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Element control</label>
-            <input type="checkbox" id="" class="form_check">
-            <label for="" class="form_name">Other</label>
-            <label for="" class="form_name">Level of control</label>
-            <input type="range" id="" name="" min="" max="" class="form_input">
 
+            <div class="form_inputs">
+               <input type="checkbox" id="telekinesis" class="form_check">
+               <label for="telekinesis" class="form_name">Telekinesis</label>
+
+               <input type="checkbox" id="super" class="form_check">
+               <label for="super" class="form_name">Super strenght or speed</label>
+
+               <input type="checkbox" id="shapeshifting" class="form_check">
+               <label for="shapeshifting" class="form_name">Shapeshifting</label>
+
+               <input type="checkbox" id="flight" class="form_check">
+               <label for="flight" class="form_name">Flight</label>
+
+               <input type="checkbox" id="control" class="form_check">
+               <label for="control" class="form_name">Element control</label>
+
+               <input type="checkbox" id="other" class="form_check">
+               <label for="other" class="form_name">Other</label><br>
+
+               <label for="level" class="form_name">Level of control</label>
+               <input type="range" id="level" name="level" min="0" max="10" value="1" step="1" class="form_range">
+            </div>
          </div>
+
          <div class="form_origin">
             <h2 class="form_title">Origin of Powers</h2>
-            <input type="radio" id="" class="form_radio">
-            <label for="" class="form_name">Unknown</label>
-            <input type="radio" id="" class="form_radio">
-            <label for="" class="form_name">Freak lab accident</label>
-            <input type="radio" id="" class="form_radio">
-            <label for="" class="form_name">Chosen by an ancient wise being</label>
-            <input type="radio" id="" class="form_radio">
-            <label for="" class="form_name">The superhero is not human</label>
-            <input type="radio" id="" class="form_radio">
-            <label for="" class="form_name">Other</label>
+
+            <div class="form_inputs">
+               <input type="radio" id="unknown" class="form_radio">
+               <label for="unknown" class="form_name">Unknown</label>
+
+               <input type="radio" id="lab" class="form_radio">
+               <label for="lab" class="form_name">Freak lab accident</label>
+
+               <input type="radio" id="elected" class="form_radio">
+               <label for="elected" class="form_name">Chosen by an ancient wise being</label>
+
+               <input type="radio" id="alian" class="form_radio">
+               <label for="alian" class="form_name">The superhero is not human</label>
+
+               <input type="radio" id="other2" class="form_radio">
+               <label for="other2" class="form_name">Other</label>
+            </div>
+            
          </div>
+
          <div class="form_btn">
-            <input type="reset">
-            <input type="submit" value="Submit">
+            <input type="reset"  value="Clear" class="btn">
+            <input type="submit" value="Send" class="btn">
          </div>
+
       </form>
    </div>
 </body>
